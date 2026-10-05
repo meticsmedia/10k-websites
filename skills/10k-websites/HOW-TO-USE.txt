@@ -1,0 +1,22 @@
+10K WEBSITES SKILL FOR CHATGPT
+
+Install it once:
+1. Open the ChatGPT desktop app and switch to Codex (top-left menu).
+2. Drag this zip file into a chat and send:  Install this skill
+3. Wait for ChatGPT to confirm it is installed.
+
+Build a website:
+1. Create a new empty folder for your website and open it in Codex.
+2. Start a new chat, type /  and pick 10k-websites. Send it. No other instructions needed.
+
+ChatGPT will check your setup, ask you a few questions about your business,
+offer Focused budget, Studio, or Full throttle production, design your site,
+create its imagery and opening film, and put it live on a free Hostinger address or your domain.
+Full throttle uses the top available GPT throughout and the strongest suitable
+image/video models with high-quality settings and room for refinement.
+You choose the direction and approve the visuals and spending; the AI handles the work.
+The skill stays installed, so you can do this again for every new website.
+
+Paused or ran out of usage? Return to the same chat when access is available and
+say continue. If a new chat is needed, open it in the same folder and invoke
+10k-websites again; it resumes from the saved plan. New chats do not reset usage limits.
