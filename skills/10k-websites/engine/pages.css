@@ -1,0 +1,14 @@
+/* pages.css: smooth changes between the pages of a multi-page site (Chrome, Edge and Safari; others simply load the page).
+   Give the shared element the same view-transition-name on both pages, e.g. the photo on a home page card
+   and the hero photo on that item's page: style="view-transition-name: item-consultation". Each name once per page. */
+@view-transition { navigation: auto; }
+::view-transition-group(*) { animation-duration: .55s; animation-timing-function: cubic-bezier(.2, .7, .1, 1); }
+::view-transition-old(root) { animation: .35s cubic-bezier(.4, 0, 1, 1) both k-page-out; }
+::view-transition-new(root) { animation: .5s cubic-bezier(.2, .7, .1, 1) .05s both k-page-in; }
+@keyframes k-page-out { to { opacity: 0; transform: translateY(-12px); } }
+@keyframes k-page-in { from { opacity: 0; transform: translateY(16px); } }
+/* the site header stays put while the page changes under it */
+.site-header { view-transition-name: site-header; }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}

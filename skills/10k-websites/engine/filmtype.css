@@ -1,0 +1,17 @@
+/* filmtype.css: ships with the 10K Websites skill, with filmtype.js. Copy into site/ unchanged.
+   Fonts, colours, sizes and shadows belong to the site's own stylesheet. */
+[data-ft-layer] { position: absolute; inset: 0; z-index: 2; overflow: hidden; pointer-events: none; display: none; }
+.ft-on [data-ft-layer] { display: block; }
+.ft-clip { position: absolute; inset: 0; }
+[data-ft] { position: absolute; left: 0; top: 0; transform-origin: 0 0; visibility: hidden; }
+[data-ft].ft-painted { will-change: transform, opacity; }
+[data-ft-at] { position: absolute; white-space: nowrap; line-height: 1; }
+.ft-probe { display: inline-block; width: 0; height: 0; vertical-align: baseline; }
+.ft-paint { position: absolute; display: block; }
+.ft-painted [data-ft-at] { visibility: hidden; }
+/* the captions the film type stands in for stay readable by screen readers, and come back
+   in the still hero (reduced motion, phones without a clip, a failed film) */
+.ft-on [data-ft-replaces] {
+  position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
