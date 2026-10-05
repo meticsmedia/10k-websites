@@ -1,0 +1,4 @@
+# only submit.php is public
+<FilesMatch "^(config|lib)\.php$">
+  Require all denied
+</FilesMatch>
