@@ -1,0 +1,22 @@
+{
+  "name": "10k-websites-tools",
+  "private": true,
+  "type": "module",
+  "description": "Cinematic website media, safe previews, visual review and launch verification.",
+  "scripts": {
+    "depth": "node depth.mjs",
+    "encode": "node encode.mjs",
+    "check": "node check.mjs",
+    "preview": "node preview.mjs",
+    "review": "node review.mjs",
+    "track": "node track.mjs",
+    "typesync": "node typesync.mjs",
+    "report": "node report.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "playwright-core": "^1.63.0",
+    "sharp": "^0.35.4"
+  }
+}
